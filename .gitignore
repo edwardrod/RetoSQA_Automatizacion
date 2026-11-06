@@ -1,0 +1,8 @@
+.gradle/
+build/
+target/
+.idea/
+*.iml
+.scannerwork/
+.env
+sonar-evidencia-privada/

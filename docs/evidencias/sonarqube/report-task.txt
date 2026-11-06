@@ -1,0 +1,6 @@
+projectKey=reto-sqa-datepicker
+serverUrl=http://127.0.0.1:9000
+serverVersion=26.10.0.133078
+dashboardUrl=http://127.0.0.1:9000/dashboard?id=reto-sqa-datepicker
+ceTaskId=987a3230-7d0c-4c10-92ac-54f95079be20
+ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=987a3230-7d0c-4c10-92ac-54f95079be20

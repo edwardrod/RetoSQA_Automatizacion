@@ -1,0 +1,3 @@
+﻿ID,Método JUnit,Objetos por flujo,Controles por flujo,Datos,Resultado observado,Archivo
+CP-02,cp02SelectSpecificDateInDifferentMonth,6,6,Día 15 de M+1,Aprobado,src/test/java/co/com/sqa/reto/runners/DatepickerTest.java
+CP-04,cp04ReplacePreviouslySelectedDate,6,7,Día 10 de M; luego día 20 de M-1,Aprobado,src/test/java/co/com/sqa/reto/runners/DatepickerTest.java

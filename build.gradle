@@ -1,51 +1,54 @@
-apply plugin: 'java-library'
-apply plugin: 'net.serenity-bdd.aggregator'
-
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-    jcenter()
+plugins {
+    id 'java'
+    id 'jacoco'
+    id 'net.serenity-bdd.serenity-gradle-plugin' version '4.2.34'
+    id 'org.sonarqube' version '6.2.0.5505'
 }
 
-buildscript {
-    repositories {
-        mavenLocal()
-        mavenCentral()
-        jcenter()
-    }
-    dependencies {
-
-        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.80")
-    }
-}
-
-
+group = 'co.com.sqa.reto'
+version = '1.0.0'
+repositories { mavenCentral() }
+java { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
+ext.serenityVersion = '4.2.34'
 dependencies {
-
-    implementation 'net.serenity-bdd:serenity-junit:2.0.80'
-    implementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
-    implementation 'net.serenity-bdd:serenity-core:2.0.80'
-    implementation 'org.slf4j:slf4j-simple:1.7.7'
-    implementation 'com.google.guava:guava:23.0'
-    implementation group: 'org.apache.poi', name: 'poi', version: '3.17'
-    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '3.17'
-
-
-
-
+    implementation "net.serenity-bdd:serenity-screenplay:${serenityVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:${serenityVersion}"
+    testImplementation "net.serenity-bdd:serenity-junit:${serenityVersion}"
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+    testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.17'
 }
-
-
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
 test {
-
-    ignoreFailures = true
+    useJUnit()
+    maxParallelForks = 1
+    systemProperty 'file.encoding', 'UTF-8'
+    ['webdriver.driver', 'headless.mode', 'chrome.switches', 'webdriver.chrome.driver',
+     'reto.baseUrl'].each { key ->
+        if (System.getProperty(key) != null) systemProperty key, System.getProperty(key)
+    }
+    testLogging { events 'passed', 'skipped', 'failed'; exceptionFormat 'full' }
+    finalizedBy 'aggregate', 'jacocoTestReport'
 }
-
-
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
+jacoco { toolVersion = '0.8.13' }
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.required = true
+        html.required = true
+        csv.required = false
+    }
 }
-
-
-gradle.startParameter.continueOnFailure = true
+sonar {
+    properties {
+        property 'sonar.projectKey', 'reto-sqa-datepicker'
+        property 'sonar.projectName', 'Reto SQA Datepicker'
+        property 'sonar.sourceEncoding', 'UTF-8'
+        property 'sonar.sources', 'src/main/java'
+        property 'sonar.tests', 'src/test/java'
+        property 'sonar.java.binaries', 'build/classes/java/main'
+        property 'sonar.java.test.binaries', 'build/classes/java/test'
+        property 'sonar.junit.reportPaths', 'build/test-results/test'
+        property 'sonar.coverage.jacoco.xmlReportPaths', 'build/reports/jacoco/test/jacocoTestReport.xml'
+    }
+}

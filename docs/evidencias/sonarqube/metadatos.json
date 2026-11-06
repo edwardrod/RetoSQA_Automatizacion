@@ -1,0 +1,21 @@
+{
+  "project": "reto-sqa-datepicker",
+  "serverVersion": "26.10.0.133078",
+  "analysisId": "2c2aa885-1f63-400f-b217-e3ff94aebb0d",
+  "analysisDate": "2026-11-06T00:09:15-0500",
+  "analyzedCommit": "7752973a49f3c0d2644d1035ce902e939bd2f859",
+  "profile": "Sonar way comprehensive",
+  "activeJavaRules": 618,
+  "qualityGate": "Sonar way",
+  "qualityGateStatus": "OK",
+  "sourceSha256": {
+    "build.gradle": "7f72ecba3d075bb4073ec586b655351f9364d439c8a6c0a0be5b53220113df2c",
+    "src/main/java/co/com/sqa/reto/interactions/EnterDemo.java": "3b43074a7f0333080fe8b48127a6505fc05055cb85e143033531667406384582",
+    "src/main/java/co/com/sqa/reto/questions/DisplayedMonth.java": "fe391ea96a8068fb0f6538ee1a8b6495a1e44970f85d3981f339ea8b5c4aeaf5",
+    "src/main/java/co/com/sqa/reto/questions/SelectedDate.java": "9972563a0a0c7f48a41df309f139d565ce696589802a2cad74fd16a11f63aac2",
+    "src/main/java/co/com/sqa/reto/tasks/OpenDatepicker.java": "5265947beb24e7186f4cf2f9ace925ddfd4f1cbb8eca176c27062e376d5aff82",
+    "src/main/java/co/com/sqa/reto/tasks/SelectDate.java": "655c07f0581041da2e78f2ac8b44736407910954f1716b1fb848da5fd0a64f0a",
+    "src/main/java/co/com/sqa/reto/userinterfaces/DatepickerPage.java": "f44d0de90114199fd96738ff08d1ee09623acd4cefd9ca796a9f8252e3d090f1",
+    "src/test/java/co/com/sqa/reto/runners/DatepickerTest.java": "eb759d86ced2ff6afbd523409a0cf53142ae415185402d3558252f993e3bd879"
+  }
+}

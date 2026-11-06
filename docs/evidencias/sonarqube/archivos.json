@@ -1,0 +1,61 @@
+{
+    "paging":  {
+                   "pageIndex":  1,
+                   "pageSize":  500,
+                   "total":  6
+               },
+    "baseComponent":  {
+                          "key":  "reto-sqa-datepicker",
+                          "name":  "Reto SQA Datepicker",
+                          "qualifier":  "TRK",
+                          "tags":  [
+
+                                   ],
+                          "visibility":  "private",
+                          "isAiCodeFixEnabled":  false
+                      },
+    "components":  [
+                       {
+                           "key":  "reto-sqa-datepicker:src/main/java/co/com/sqa/reto/userinterfaces/DatepickerPage.java",
+                           "name":  "DatepickerPage.java",
+                           "qualifier":  "FIL",
+                           "path":  "src/main/java/co/com/sqa/reto/userinterfaces/DatepickerPage.java",
+                           "language":  "java"
+                       },
+                       {
+                           "key":  "reto-sqa-datepicker:src/main/java/co/com/sqa/reto/questions/DisplayedMonth.java",
+                           "name":  "DisplayedMonth.java",
+                           "qualifier":  "FIL",
+                           "path":  "src/main/java/co/com/sqa/reto/questions/DisplayedMonth.java",
+                           "language":  "java"
+                       },
+                       {
+                           "key":  "reto-sqa-datepicker:src/main/java/co/com/sqa/reto/interactions/EnterDemo.java",
+                           "name":  "EnterDemo.java",
+                           "qualifier":  "FIL",
+                           "path":  "src/main/java/co/com/sqa/reto/interactions/EnterDemo.java",
+                           "language":  "java"
+                       },
+                       {
+                           "key":  "reto-sqa-datepicker:src/main/java/co/com/sqa/reto/tasks/OpenDatepicker.java",
+                           "name":  "OpenDatepicker.java",
+                           "qualifier":  "FIL",
+                           "path":  "src/main/java/co/com/sqa/reto/tasks/OpenDatepicker.java",
+                           "language":  "java"
+                       },
+                       {
+                           "key":  "reto-sqa-datepicker:src/main/java/co/com/sqa/reto/tasks/SelectDate.java",
+                           "name":  "SelectDate.java",
+                           "qualifier":  "FIL",
+                           "path":  "src/main/java/co/com/sqa/reto/tasks/SelectDate.java",
+                           "language":  "java"
+                       },
+                       {
+                           "key":  "reto-sqa-datepicker:src/main/java/co/com/sqa/reto/questions/SelectedDate.java",
+                           "name":  "SelectedDate.java",
+                           "qualifier":  "FIL",
+                           "path":  "src/main/java/co/com/sqa/reto/questions/SelectedDate.java",
+                           "language":  "java"
+                       }
+                   ]
+}

@@ -1,0 +1,8 @@
+﻿ID,Casos,Objeto,Localizador,Referencia
+OBJ-01,CP-02 y CP-04,iframe de la demo,iframe.demo-frame,EnterDemo.performAs
+OBJ-02,CP-02 y CP-04,Campo de fecha,#datepicker,DatepickerPage.DATE
+OBJ-03,CP-02 y CP-04,Calendario emergente,#ui-datepicker-div,DatepickerPage.CALENDAR
+OBJ-04,CP-02,Botón mes siguiente,.ui-datepicker-next,DatepickerPage.NEXT
+OBJ-05,CP-04,Botón mes anterior,.ui-datepicker-prev,DatepickerPage.PREVIOUS
+OBJ-06,CP-02 y CP-04,Primera celda habilitada del mes,#ui-datepicker-div td[data-handler='selectDay'],DatepickerPage.FIRST_DAY
+OBJ-07,CP-02 y CP-04,Día seleccionable,#ui-datepicker-div td[data-handler='selectDay'] a,DatepickerPage.DAYS

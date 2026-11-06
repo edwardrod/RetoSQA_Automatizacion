@@ -1,0 +1,8 @@
+﻿ID,Casos,Resultado observable,Criterio,Referencia
+PC-01,CP-02 y CP-04,Calendario visible después de pulsar el campo,CA1,WaitUntil CALENDAR isVisible
+PC-02,CP-02 y CP-04,Mes y año objetivo alcanzados por navegación,CA4,DisplayedMonth; condición de salida en SelectDate
+PC-03,CP-02 y CP-04,Calendario cerrado después de elegir el día,CA2,WaitUntil CALENDAR isNotVisible
+PC-04,CP-02 y CP-04,Valor exacto de la fecha en MM/dd/yyyy,CA3,SelectedDate y seeThat equalTo
+PC-05,CP-02 y CP-04,Mes y año correctos al reabrir,CA4,DisplayedMonth y seeThat equalTo
+PC-06,CP-02 y CP-04,Valor conservado al reabrir el calendario,CA2; retención local,SelectedDate y seeThat equalTo
+PC-07,CP-04,Fecha inicial verificada antes de sustituirla,CA2 y CA3,SelectedDate; aserción fecha inicial

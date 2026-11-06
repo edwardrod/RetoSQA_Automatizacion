@@ -1,0 +1,49 @@
+{
+    "name":  "Sonar way",
+    "conditions":  [
+                       {
+                           "id":  "4505ebe7-d329-47d4-a1d1-e7be8e388628",
+                           "metric":  "new_violations",
+                           "op":  "GT",
+                           "error":  "0",
+                           "isCaycCondition":  true
+                       },
+                       {
+                           "id":  "05831f84-cf24-48da-bcd1-50f96fae42d6",
+                           "metric":  "new_coverage",
+                           "op":  "LT",
+                           "error":  "80",
+                           "isCaycCondition":  true
+                       },
+                       {
+                           "id":  "79816396-aba9-4307-a985-44851cb69cfa",
+                           "metric":  "new_duplicated_lines_density",
+                           "op":  "GT",
+                           "error":  "3",
+                           "isCaycCondition":  true
+                       },
+                       {
+                           "id":  "6e3fcb82-14a2-4418-9afc-235cfb9e5c97",
+                           "metric":  "new_security_hotspots_reviewed",
+                           "op":  "LT",
+                           "error":  "100",
+                           "isCaycCondition":  true
+                       }
+                   ],
+    "isBuiltIn":  true,
+    "actions":  {
+                    "rename":  false,
+                    "setAsDefault":  false,
+                    "copy":  true,
+                    "associateProjects":  false,
+                    "delete":  false,
+                    "manageConditions":  false,
+                    "delegate":  false,
+                    "manageAiCodeAssurance":  false
+                },
+    "caycStatus":  "compliant",
+    "isDefault":  true,
+    "hasStandardConditions":  false,
+    "hasMQRConditions":  false,
+    "isAiCodeSupported":  false
+}

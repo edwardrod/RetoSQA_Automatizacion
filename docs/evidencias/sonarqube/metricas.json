@@ -1,0 +1,98 @@
+{
+    "component":  {
+                      "key":  "reto-sqa-datepicker",
+                      "name":  "Reto SQA Datepicker",
+                      "qualifier":  "TRK",
+                      "measures":  [
+                                       {
+                                           "metric":  "coverage",
+                                           "value":  "96.7",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "reliability_rating",
+                                           "value":  "1.0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "code_smells",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines_density",
+                                           "value":  "0.0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "functions",
+                                           "value":  "12"
+                                       },
+                                       {
+                                           "metric":  "security_rating",
+                                           "value":  "1.0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "classes",
+                                           "value":  "6"
+                                       },
+                                       {
+                                           "metric":  "security_hotspots",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "sqale_index",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "sqale_rating",
+                                           "value":  "1.0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "alert_status",
+                                           "value":  "OK"
+                                       },
+                                       {
+                                           "metric":  "bugs",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "test_failures",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "tests",
+                                           "value":  "2"
+                                       },
+                                       {
+                                           "metric":  "ncloc",
+                                           "value":  "115"
+                                       },
+                                       {
+                                           "metric":  "vulnerabilities",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "lines",
+                                           "value":  "133"
+                                       },
+                                       {
+                                           "metric":  "skipped_tests",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "test_errors",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       }
+                                   ]
+                  }
+}

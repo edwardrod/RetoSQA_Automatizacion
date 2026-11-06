@@ -1,0 +1,65 @@
+{
+    "paging":  {
+                   "pageIndex":  1,
+                   "pageSize":  10,
+                   "total":  3
+               },
+    "analyses":  [
+                     {
+                         "key":  "2c2aa885-1f63-400f-b217-e3ff94aebb0d",
+                         "date":  "2026-11-06T00:09:15-0500",
+                         "events":  [
+                                        {
+                                            "key":  "59120a26-0552-4341-8b21-f9c77f031d68",
+                                            "category":  "VERSION",
+                                            "name":  "1.0.0"
+                                        }
+                                    ],
+                         "projectVersion":  "1.0.0",
+                         "manualNewCodePeriodBaseline":  false,
+                         "revision":  "7752973a49f3c0d2644d1035ce902e939bd2f859",
+                         "detectedCI":  "undetected"
+                     },
+                     {
+                         "key":  "94802481-d85b-4c26-b19d-bfa37d9d0f45",
+                         "date":  "2026-11-06T00:06:38-0500",
+                         "events":  [
+                                        {
+                                            "key":  "f9d3f313-3c58-45c0-882c-4e7a3d3fd23f",
+                                            "category":  "QUALITY_PROFILE",
+                                            "name":  "Use \"Sonar way comprehensive\" (java)",
+                                            "qualityProfile":  {
+
+                                                               }
+                                        },
+                                        {
+                                            "key":  "9c0ac7c2-c028-4a56-96d0-305bebf04c57",
+                                            "category":  "QUALITY_PROFILE",
+                                            "name":  "Stop using \"Sonar way core\" (java)",
+                                            "qualityProfile":  {
+
+                                                               }
+                                        }
+                                    ],
+                         "projectVersion":  "1.0.0",
+                         "manualNewCodePeriodBaseline":  false,
+                         "revision":  "a9ba1f477b29c6068dfce9e17c0d9992ec0b2930",
+                         "detectedCI":  "undetected"
+                     },
+                     {
+                         "key":  "9222392c-b784-485c-9336-85a69ea6f269",
+                         "date":  "2026-11-06T00:04:39-0500",
+                         "events":  [
+                                        {
+                                            "key":  "0b629450-49a3-4d63-a5b2-afa10c205ac9",
+                                            "category":  "SQ_UPGRADE",
+                                            "name":  "26.10.0.133078"
+                                        }
+                                    ],
+                         "projectVersion":  "1.0.0",
+                         "manualNewCodePeriodBaseline":  false,
+                         "revision":  "a9ba1f477b29c6068dfce9e17c0d9992ec0b2930",
+                         "detectedCI":  "undetected"
+                     }
+                 ]
+}
